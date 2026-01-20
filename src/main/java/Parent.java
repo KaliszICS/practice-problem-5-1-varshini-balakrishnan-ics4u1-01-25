@@ -2,6 +2,12 @@ class Parent extends Person {
     private Parent spouse;
     private Child[] children;
 
+    public Parent() {
+        super();
+        this.spouse = null;
+        this.children = new Child[0];
+    }
+
     public Parent(String name, int age, Parent spouse) {
         super(name, age);
         this.spouse = spouse;

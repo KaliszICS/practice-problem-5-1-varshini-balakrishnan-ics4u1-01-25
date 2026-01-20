@@ -3,6 +3,13 @@ class Child extends Person {
     private Parent parent2;
     private Child[] siblings;
 
+    public Child() {
+        super();
+        this.parent1= null;
+        this.parent2 = null;
+        this.siblings = new Child[0];
+    }
+
     public Child(String name, int age, Parent parent1, Parent parent2) {
         super(name, age);
         this.parent1 = parent1;
