@@ -8,6 +8,12 @@ class Parent extends Person {
         this.children = new Child[0];
     }
 
+    public Parent(String name, int age) {
+        super(name, age);
+        this.spouse = null;
+        this.children = new Child[0];
+    }
+
     public Parent(String name, int age, Parent spouse) {
         super(name, age);
         this.spouse = spouse;
