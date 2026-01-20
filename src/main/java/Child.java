@@ -12,7 +12,7 @@ class Child extends Person {
     }
     public Child(String name, int age) {
         super(name, age);
-        tthis.parent1= null;
+        this.parent1 = null;
         this.parent2 = null;
         this.siblings = new Child[0];
     }
